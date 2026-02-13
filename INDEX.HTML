@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whak a Akku</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>⚡ Whak a Akku ⚡</h1>
+      <p class="subtitle">Whack Akkus before they vanish!</p>
+
+      <section class="hud" aria-label="Game status">
+        <p><strong>Score:</strong> <span id="score">0</span></p>
+        <p><strong>Time:</strong> <span id="time">30</span>s</p>
+        <p><strong>Best:</strong> <span id="best">0</span></p>
+      </section>
+
+      <button id="start-btn" type="button">Start Game</button>
+
+      <section class="grid" id="grid" aria-label="Whak a Akku board">
+        <button class="hole" type="button" aria-label="Hole 1"></button>
+        <button class="hole" type="button" aria-label="Hole 2"></button>
+        <button class="hole" type="button" aria-label="Hole 3"></button>
+        <button class="hole" type="button" aria-label="Hole 4"></button>
+        <button class="hole" type="button" aria-label="Hole 5"></button>
+        <button class="hole" type="button" aria-label="Hole 6"></button>
+        <button class="hole" type="button" aria-label="Hole 7"></button>
+        <button class="hole" type="button" aria-label="Hole 8"></button>
+        <button class="hole" type="button" aria-label="Hole 9"></button>
+      </section>
+
+      <p id="status" class="status" role="status" aria-live="polite">
+        Press Start to begin.
+      </p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
